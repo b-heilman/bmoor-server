@@ -16,3 +16,9 @@ git push --set-upstream origin master
 ```
 node serve.js
 ```
+
+### To test server
+use apache benchmark, run server first
+```
+ab -n 100 -c 10 http://localhost:9001/health
+```
