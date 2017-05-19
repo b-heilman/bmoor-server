@@ -1,0 +1,6 @@
+.DS_Store
+.settings
+.project
+/dist
+/doc
+/node_modules
