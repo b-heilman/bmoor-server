@@ -1,6 +1,8 @@
 module.exports = function( req, res, next ){
 	req.hello = true;
 
-	console.log( 'middleware - hello', process.pid );
+	process.send({msgFromWorker: 'This is from worker ' + process.pid + '.'});
+
+  	console.log( 'middleware - hello', process.pid );
 	next();
 };
